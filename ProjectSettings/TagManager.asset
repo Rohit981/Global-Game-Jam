@@ -7,6 +7,8 @@ TagManager:
   - EngineRepair
   - ShieldRepair
   - Ladder
+  - Enemy
+  - EnemyBullet
   layers:
   - Default
   - TransparentFX
