@@ -1,0 +1,703 @@
+fileFormatVersion: 2
+guid: 395f4978f55f85146ba1a31e4bac1fd2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6293564169232117032
+    second: Repairman SpriteSheet_0
+  - first:
+      213: -3686569250513485765
+    second: Repairman SpriteSheet_1
+  - first:
+      213: 7957871641365715183
+    second: Repairman SpriteSheet_2
+  - first:
+      213: 4801873648963330106
+    second: Repairman SpriteSheet_3
+  - first:
+      213: 895544912760645621
+    second: Repairman SpriteSheet_4
+  - first:
+      213: -2406448014155260381
+    second: Repairman SpriteSheet_5
+  - first:
+      213: 5727369664035743443
+    second: Repairman SpriteSheet_6
+  - first:
+      213: 3517023561924794922
+    second: Repairman SpriteSheet_7
+  - first:
+      213: 8612807326975195095
+    second: Repairman SpriteSheet_8
+  - first:
+      213: 7541529554535021555
+    second: Repairman SpriteSheet_9
+  - first:
+      213: 5161002879458736853
+    second: Repairman SpriteSheet_10
+  - first:
+      213: -2153915090936196504
+    second: Repairman SpriteSheet_11
+  - first:
+      213: -3097527189132429393
+    second: Repairman SpriteSheet_12
+  - first:
+      213: 7325949109082114114
+    second: Repairman SpriteSheet_13
+  - first:
+      213: 1377493818615004833
+    second: Repairman SpriteSheet_14
+  - first:
+      213: 5067090801842090465
+    second: Repairman SpriteSheet_15
+  - first:
+      213: 1257861909226920667
+    second: Repairman SpriteSheet_16
+  - first:
+      213: -7253515897878314080
+    second: Repairman SpriteSheet_17
+  - first:
+      213: 6632390531670050637
+    second: Repairman SpriteSheet_18
+  - first:
+      213: -3175558426831421980
+    second: Repairman SpriteSheet_19
+  - first:
+      213: 8532517922960434342
+    second: Repairman SpriteSheet_20
+  - first:
+      213: 1088052468015995355
+    second: Repairman SpriteSheet_21
+  - first:
+      213: 1119847200666446596
+    second: Repairman SpriteSheet_22
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Repairman SpriteSheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6835
+        width: 14
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e417124a320b48143a823ffd2e2215b6
+      internalID: 6293564169232117032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Repairman SpriteSheet_1
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 5968
+        width: 932
+        height: 1139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a347a0c4cea4ffe438b27ca731f236ab
+      internalID: -3686569250513485765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Repairman SpriteSheet_2
+      rect:
+        serializedVersion: 2
+        x: 1036
+        y: 6835
+        width: 15
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0cc1ccb9c0ec37498009f768a5e410d
+      internalID: 7957871641365715183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Repairman SpriteSheet_3
+      rect:
+        serializedVersion: 2
+        x: 1109
+        y: 5968
+        width: 928
+        height: 1111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db6ee622f1cfa8f468be005a84853b7a
+      internalID: 4801873648963330106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Repairman SpriteSheet_4
+      rect:
+        serializedVersion: 2
+        x: 3025
+        y: 4678
+        width: 2375
+        height: 2163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b25e93ac6d82b94583964a8d1340f0c
+      internalID: 895544912760645621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Repairman SpriteSheet_5
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 6810
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b53b16824f6ed342a3b29c1f5d8a361
+      internalID: -2406448014155260381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Repairman SpriteSheet_6
+      rect:
+        serializedVersion: 2
+        x: 1071
+        y: 6810
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4dc914fccf0a684599628d2fffd4b73
+      internalID: 5727369664035743443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Repairman SpriteSheet_7
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 4678
+        width: 963
+        height: 1051
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f89bd173aee3b9345b3afa9c7cbcb380
+      internalID: 3517023561924794922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Repairman SpriteSheet_8
+      rect:
+        serializedVersion: 2
+        x: 1204
+        y: 4678
+        width: 432
+        height: 1033
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a788d8dde96fbef4da5cf00137f703ae
+      internalID: 8612807326975195095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Repairman SpriteSheet_9
+      rect:
+        serializedVersion: 2
+        x: 1783
+        y: 5483
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 797e5badc0333d1499b3655df208e0c7
+      internalID: 7541529554535021555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Repairman SpriteSheet_10
+      rect:
+        serializedVersion: 2
+        x: 1793
+        y: 4688
+        width: 1014
+        height: 1065
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 276c7ceed282b714e940fcf49fb63b63
+      internalID: 5161002879458736853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Repairman SpriteSheet_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5459
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d60176ca9e140d743a6fc33ddc56baff
+      internalID: -2153915090936196504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Repairman SpriteSheet_12
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 5436
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91b7e8f2bbf4d8843821c81f2c56a97e
+      internalID: -3097527189132429393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Repairman SpriteSheet_13
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 4319
+        width: 15
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c191b4b6376bb7142adc34b5aad056a1
+      internalID: 7325949109082114114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Repairman SpriteSheet_14
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 3556
+        width: 433
+        height: 1034
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 111f98c8c7de3d548b269f309541086b
+      internalID: 1377493818615004833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Repairman SpriteSheet_15
+      rect:
+        serializedVersion: 2
+        x: 1127
+        y: 3567
+        width: 580
+        height: 1005
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 894d7016c078c62438858b539addf896
+      internalID: 5067090801842090465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Repairman SpriteSheet_16
+      rect:
+        serializedVersion: 2
+        x: 1914
+        y: 3567
+        width: 620
+        height: 1005
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 735a27d9bdfdca445983b966bfed66ca
+      internalID: 1257861909226920667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Repairman SpriteSheet_17
+      rect:
+        serializedVersion: 2
+        x: 2793
+        y: 3567
+        width: 721
+        height: 1005
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c3e71ae516722345b0185997c67849d
+      internalID: -7253515897878314080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Repairman SpriteSheet_18
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 4295
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63cb627695521f5419f32aff4eb75458
+      internalID: 6632390531670050637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Repairman SpriteSheet_19
+      rect:
+        serializedVersion: 2
+        x: 853
+        y: 4302
+        width: 15
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3773a7db13421045aadda9b5a4498d4
+      internalID: -3175558426831421980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Repairman SpriteSheet_20
+      rect:
+        serializedVersion: 2
+        x: 2520
+        y: 4302
+        width: 15
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 716286a35a2ac0247b62c9618f889b62
+      internalID: 8532517922960434342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Repairman SpriteSheet_21
+      rect:
+        serializedVersion: 2
+        x: 888
+        y: 4279
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90bbf190be645f343b434c836827285b
+      internalID: 1088052468015995355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Repairman SpriteSheet_22
+      rect:
+        serializedVersion: 2
+        x: 2555
+        y: 4279
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b15910b9ec7d3ae49aee7f1a547e109e
+      internalID: 1119847200666446596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: e05a57bd0e5817940a334493553d27e0
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

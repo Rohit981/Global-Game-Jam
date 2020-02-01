@@ -26,11 +26,15 @@ public class EnemyBulletMovement : MonoBehaviour
         rb.velocity = targetVector * speed * Time.deltaTime;
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.tag == "Player")
+
+        if (collision.gameObject.tag == "Player")
         {
+            print("Collided with player");
             Destroy(this.gameObject);
         }
     }
+
+   
 }
