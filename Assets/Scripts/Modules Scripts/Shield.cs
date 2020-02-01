@@ -14,9 +14,8 @@ public class Shield : ShipModule
     // Update is called once per frame
     void Update()
     {
-        if (isRepairing)
-            Repairing();
-        if (!isRepairing)
+        Repairing();
+        if (!isRepairing && health > 0)
         {
             health -= Time.deltaTime * damageMagnifier;
         }

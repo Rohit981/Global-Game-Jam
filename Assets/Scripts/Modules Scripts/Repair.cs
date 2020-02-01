@@ -14,7 +14,7 @@ public class Repair : MonoBehaviour
         if (GetComponent<ShipModule>() == null) return;
 
         collidedObj = collision.gameObject;
-        if (Input.GetButton(collidedObj.GetComponent<PlayerMovement>().playerInteract))
+        if (Input.GetButtonDown(collidedObj.GetComponent<PlayerMovement>().playerInteract))
         {
             GetComponent<ShipModule>().isRepairing = true;
         }

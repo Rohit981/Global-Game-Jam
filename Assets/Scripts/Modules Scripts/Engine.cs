@@ -17,9 +17,8 @@ public class Engine : ShipModule
     void Update()
     {
         
-        if (isRepairing)
             Repairing();
-        if (!isRepairing)
+        if (!isRepairing  && health > 0)
         {
             health -= Time.deltaTime * shield.damageMagnifier; 
         }
@@ -27,9 +26,10 @@ public class Engine : ShipModule
         {
             shipCont.agent.isStopped = true;
         }
-        else 
+        else
             shipCont.agent.isStopped = false;
 
         progressBar.setFillAmount(health);
     }
+
 }

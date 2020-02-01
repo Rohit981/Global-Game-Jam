@@ -26,7 +26,7 @@ public class ShipModule : MonoBehaviour
     {
         if (isRepairing) {
 
-            health += Time.deltaTime * repairSpeed;
+            health += Time.deltaTime * repairSpeed * 5;
         }
 
     }
