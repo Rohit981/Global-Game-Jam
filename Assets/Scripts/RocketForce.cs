@@ -6,8 +6,14 @@ public class RocketForce : MonoBehaviour
 {
     Rigidbody2D rb;
     [SerializeField] private float forceValue;
+
      private Transform target;
+
     [SerializeField] private float RoatateValue;
+    
+    private float detonateTime = 0f;
+
+    [SerializeField] private float TimeOfDetonation = 6f;
     
     // Start is called before the first frame update
     void Start()
@@ -30,13 +36,22 @@ public class RocketForce : MonoBehaviour
         //float rotateAmount = Vector3.Cross(direction, transform.up).z;
 
         //rb.angularVelocity =  -rotateAmount * RoatateValue;
-
+        DetonateValue();
 
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if(collision.gameObject.tag == "Enemy")
+        {
+            Destroy(this.gameObject);
+        }
+    }
+
+    void DetonateValue()
+    {
+        detonateTime += Time.deltaTime;
+        if ( detonateTime >= TimeOfDetonation)
         {
             Destroy(this.gameObject);
         }
