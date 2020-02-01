@@ -7,21 +7,25 @@ public class SpawnEnemies : MonoBehaviour
     [SerializeField] public GameObject Enemy;
     private float EnemySpawnTime;
     private float nextSpawn = 0f;
+    private float MaxSpawn = 0f;
+    private float rand;
+    float previousSpawnTime;
     // Start is called before the first frame update
     void Start()
     {
-        EnemySpawnTime = 2f;
+        MaxSpawn = 10f;
     }
 
     // Update is called once per frame
     void Update()
-    {        
-
-        if(Time.time > nextSpawn)
+    {
+        
+        float rand = Random.Range(1f, 4f);
+        if(Time.time > rand + previousSpawnTime && (MaxSpawn - nextSpawn) != 0)
         {
-            nextSpawn = Time.time + EnemySpawnTime;
-            Instantiate(Enemy, transform.position, Quaternion.Euler(0,0, -180));
-           
+            nextSpawn++;
+            Instantiate(Enemy, transform.position, Quaternion.Euler(0,0, 0));
+            previousSpawnTime = Time.time;
         }
     }
 }

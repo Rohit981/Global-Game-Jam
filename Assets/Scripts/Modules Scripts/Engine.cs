@@ -10,17 +10,18 @@ public class Engine : ShipModule
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        UpdateRepairBonus();
+        if (isRepairing)
             Repairing();
-        if (!isRepairing  && health > 0)
+        //if (!isRepairing)
         {
-            health -= Time.deltaTime * shield.damageMagnifier; 
+            health -= Time.deltaTime * (shield.damageMagnifier * shield.GetEffectiveShieldPenalty());
         }
         if (health <= 10)
         {
@@ -31,5 +32,4 @@ public class Engine : ShipModule
 
         progressBar.setFillAmount(health);
     }
-
 }

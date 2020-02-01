@@ -14,16 +14,12 @@ public class RepairTest : MonoBehaviour
         if (GetComponent<ShipModuleTest>() == null) return;
 
         collidedObj = collision.gameObject;
-        //if (Input.GetButton(collidedObj.GetComponent<PlayerMovement>().playerInteract))
+        GetComponent<ShipModuleTest>().isRepairing = true;
+        if (GetComponent<ShipModuleTest>().health < 0)
         {
-            GetComponent<ShipModuleTest>().isRepairing = true;
-            if (GetComponent<ShipModuleTest>().health < 0)
-            {
-                GetComponent<ShipModuleTest>().health = 0;
-            }
+           GetComponent<ShipModuleTest>().health = 0;
         }
-        //else
-        //    GetComponent<ShipModuleTest>().isRepairing = false;
+        
         if (Input.GetButtonDown(collidedObj.GetComponent<PlayerMovement>().playerInteract))
         {
             GetComponent<ShipModuleTest>().neglect = 0.0001f;

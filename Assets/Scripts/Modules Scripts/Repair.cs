@@ -4,30 +4,35 @@ using UnityEngine;
 
 public class Repair : MonoBehaviour
 {
-    // Start is called before the first frame update
-
     private GameObject collidedObj;
     private void OnCollisionStay2D(Collision2D collision)
     {
         if (collision.gameObject.tag != "Player") return;
 
-        if (GetComponent<ShipModule>() == null) return;
+        if (GetComponent<ShipModuleTest>() == null) return;
 
         collidedObj = collision.gameObject;
+        GetComponent<ShipModuleTest>().isRepairing = true;
+        if (GetComponent<ShipModuleTest>().health < 0)
+        {
+            GetComponent<ShipModuleTest>().health = 0;
+        }
+
         if (Input.GetButtonDown(collidedObj.GetComponent<PlayerMovement>().playerInteract))
         {
-            GetComponent<ShipModule>().isRepairing = true;
+            GetComponent<ShipModuleTest>().neglect = 0.0001f;
+            if (GetComponent<ShipModuleTest>().amountToRepair < 10)
+            {
+                GetComponent<ShipModuleTest>().amountToRepair += GetComponent<ShipModuleTest>().repairSpeed;
+            }
         }
-        else
-            GetComponent<ShipModule>().isRepairing = false;
-
     }
 
 
     private void OnCollisionExit2D(Collision2D collision)
     {
         if (collision.gameObject != collidedObj) return;
-        GetComponent<ShipModule>().isRepairing = false;
+        GetComponent<ShipModuleTest>().isRepairing = false;
 
     }
     // Update is called once per frame

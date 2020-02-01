@@ -26,6 +26,7 @@ public class RocketForce : MonoBehaviour
     void Update()
     {
         rb.velocity = transform.up * forceValue * Time.deltaTime;
+        transform.rotation = new Quaternion(0,0 ,transform.rotation.z,0);
 
         Vector3 targetVector = target.position - transform.position;
 
@@ -34,6 +35,7 @@ public class RocketForce : MonoBehaviour
         rb.angularVelocity = -1 * rotatingIndex * RoatateValue * Time.deltaTime;
 
         //float rotateAmount = Vector3.Cross(direction, transform.up).z;
+
 
         //rb.angularVelocity =  -rotateAmount * RoatateValue;
         DetonateValue();
