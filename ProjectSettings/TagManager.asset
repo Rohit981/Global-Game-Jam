@@ -4,11 +4,9 @@
 TagManager:
   serializedVersion: 2
   tags:
-<<<<<<< HEAD
+  - EngineRepair
+  - ShieldRepair
   - Ladder
-=======
-  - Enemy
->>>>>>> ac39195c7e11f9da0f93eb3a90f80d071fb36e44
   layers:
   - Default
   - TransparentFX
@@ -18,7 +16,7 @@ TagManager:
   - UI
   - 
   - 
-  - Player
+  - 
   - 
   - 
   - 
