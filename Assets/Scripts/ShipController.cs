@@ -12,12 +12,15 @@ public class ShipController : MonoBehaviour
     public float hullIntegrity = 100;
     public Shield shieldref;
     [SerializeField] private ProgressBar progressBar;
-    [SerializeField] private string LevelName;
+    [SerializeField] private string LoseLevelName;
+    [SerializeField] private string WinLevelName;
+    public float goalValue;
     // Update is called once per frame
 
     private void Start()
     {
-        LevelName = "LoseScene";
+        LoseLevelName = "LoseScene";
+        WinLevelName = "WinScene";
     }
 
     void Update() {
@@ -37,8 +40,15 @@ public class ShipController : MonoBehaviour
 
         if(hullIntegrity <= 0)
         {
-            SceneManager.LoadScene(LevelName, LoadSceneMode.Single);            
+            SceneManager.LoadScene(LoseLevelName, LoadSceneMode.Single);            
         }
-      
+
+        Vector3 goal = targetPoint.transform.position - transform.position;
+        goalValue = goal.magnitude;
+        if (goalValue <= 72) {
+            SceneManager.LoadScene(WinLevelName, LoadSceneMode.Single);
+
+        }
+
     }
 }
