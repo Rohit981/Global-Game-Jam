@@ -7,7 +7,7 @@ public class LoadLevel : MonoBehaviour
     [SerializeField] private string LevelName;
    public void PlayGame()
     {
-        SceneManager.LoadScene(LevelName, LoadSceneMode.Single);
+        SceneManager.LoadScene(LevelName);
     }
 
     public void QuitLevel()

@@ -43,12 +43,15 @@ public class ShipController : MonoBehaviour
             SceneManager.LoadScene(LoseLevelName, LoadSceneMode.Single);            
         }
 
-        Vector3 goal = targetPoint.transform.position - transform.position;
-        goalValue = goal.magnitude;
-        if (goalValue <= 72) {
-            SceneManager.LoadScene(WinLevelName, LoadSceneMode.Single);
-
-        }
+       
 
     }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "EndGoal")
+        {
+            SceneManager.LoadScene(WinLevelName, LoadSceneMode.Single);
+        }
+    }
+
 }

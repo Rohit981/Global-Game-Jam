@@ -10,6 +10,7 @@ TagManager:
   - Enemy
   - EnemyBullet
   - Combat
+  - EndGoal
   layers:
   - Default
   - TransparentFX
