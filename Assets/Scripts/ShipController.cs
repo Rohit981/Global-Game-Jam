@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.UI;
 
 public class ShipController : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class ShipController : MonoBehaviour
     public NavMeshAgent agent;
     public float hullIntegrity = 100;
     public Shield shieldref;
+    [SerializeField] private ProgressBar progressBar;
     // Update is called once per frame
 
     private void Start()
@@ -21,6 +23,7 @@ public class ShipController : MonoBehaviour
         agent.SetDestination(targetPoint.transform.position);
         transform.rotation = Quaternion.Euler(0,90,0);
         LowerHealth();
+        progressBar.setFillAmount(hullIntegrity);
     }
 
     void LowerHealth()
