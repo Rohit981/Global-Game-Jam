@@ -61,6 +61,7 @@ public class EnemyRotation : MonoBehaviour
     private void OnDestroy()
     {
         MaxEnemies -= 1f;
+
     }
 
 
