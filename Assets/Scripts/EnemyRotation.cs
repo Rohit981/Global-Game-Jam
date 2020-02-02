@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class EnemyRotation : MonoBehaviour
 {
+    private GameObject combatState;
     [SerializeField] private Transform target;
     Rigidbody2D rb;
     [SerializeField] private float speed;
@@ -18,7 +19,8 @@ public class EnemyRotation : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         speed = 0.01f;
         ChangeState = 0f;
-
+        combatState = GameObject.FindGameObjectWithTag("Combat");
+        combatState.GetComponent<Combat>().enemies++;
     }
 
     // Update is called once per frame
@@ -50,6 +52,7 @@ public class EnemyRotation : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             print("Collided with player");
+            combatState.GetComponent<Combat>().enemies--;
             Destroy(this.gameObject);
         }
     }
