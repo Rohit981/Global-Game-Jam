@@ -1168,6 +1168,7 @@ GameObject:
   - component: {fileID: 731861872}
   - component: {fileID: 731861871}
   - component: {fileID: 731861874}
+  - component: {fileID: 731861875}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1255,6 +1256,19 @@ MonoBehaviour:
   target: {fileID: 1531036038}
   smoothSpeed: 0.125
   offset: {x: 0, y: 1.31, z: -30}
+--- !u!114 &731861875
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 731861870}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5ce2a9b982970043a70b09c518a0796, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shakeDuration: 0
 --- !u!1 &761084753
 GameObject:
   m_ObjectHideFlags: 0
@@ -2146,7 +2160,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 243b70267aeb51e488e4dd141e2567ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 15
+  health: 50
   isRepairing: 0
   repairSpeed: 5.67
   secondsTillRepairStop: 0.0001
@@ -2204,7 +2218,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.6415094, g: 0.6203275, b: 0.6203275, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2279,7 +2293,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.5849056, g: 0.5849056, b: 0.5849056, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -3309,7 +3323,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.6415094, g: 0.6203275, b: 0.6203275, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
