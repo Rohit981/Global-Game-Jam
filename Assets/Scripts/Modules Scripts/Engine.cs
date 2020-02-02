@@ -17,12 +17,13 @@ public class Engine : ShipModule
     void Update()
     {
         UpdateRepairBonus();
+        if (health > 0) { 
+            health -= Time.deltaTime * (shield.damageMagnifier * shield.GetEffectiveShieldPenalty());
+         }
+
         if (isRepairing)
             Repairing();
-        //if (!isRepairing)
-        {
-            health -= Time.deltaTime * (shield.damageMagnifier * shield.GetEffectiveShieldPenalty());
-        }
+
         if (health <= 10)
         {
             shipCont.agent.isStopped = true;

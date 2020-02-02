@@ -6,11 +6,13 @@ public class EnemyRotation : MonoBehaviour
 {
     [SerializeField] private Transform target;
     Rigidbody2D rb;
+    [SerializeField] private GameObject combatState;
     [SerializeField] private float speed;
     [SerializeField] private float ChangeState;
     public Vector3 targetVector;
     public float mag;
     bool closeEnough = false;
+    internal float MaxEnemies = 10;
     // Start is called before the first frame update
     void Start()
     {
@@ -50,7 +52,16 @@ public class EnemyRotation : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             print("Collided with player");
+
             Destroy(this.gameObject);
+            
         }
     }
+
+    private void OnDestroy()
+    {
+        MaxEnemies -= 1f;
+    }
+
+
 }

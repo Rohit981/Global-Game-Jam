@@ -82,6 +82,8 @@ public class RocketForce : MonoBehaviour
         {
             Destroy(this.gameObject);
             Destroy(collision.gameObject);
+  
+
         }
     }
 
