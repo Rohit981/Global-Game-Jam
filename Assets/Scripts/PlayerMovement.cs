@@ -7,11 +7,13 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D rigidBody;
     private bool onLadder;
     public string playerHor, playrVert, playerInteract;
+    private Animator anim;
     // Start is called before the first frame update
     void Start()
     {
         rigidBody = gameObject.GetComponent<Rigidbody2D>();
         onLadder = false;
+        anim = GetComponent<Animator>();
     }
 
    
@@ -53,10 +55,16 @@ public class PlayerMovement : MonoBehaviour
             //}
             if ((Input.GetAxis(playrVert)) > 0.01f) {
                 rigidBody.transform.Translate(new Vector2(0f, 3.5f * Time.deltaTime));
+               
+
             }
+
             else if ((Input.GetAxis(playrVert)) < -0.01f) {
                 rigidBody.transform.Translate(new Vector2(0f, -3.5f * Time.deltaTime));
             }
+
+           
+
         }
         else
         {
@@ -76,9 +84,15 @@ public class PlayerMovement : MonoBehaviour
 
         if ((Input.GetAxis(playerHor)) > 0.01f) {
             rigidBody.transform.Translate(new Vector2(3.5f * Time.deltaTime, 0f));
+            anim.SetBool("Running", true);
         }
         else if ((Input.GetAxis(playerHor)) < -0.01f) {
             rigidBody.transform.Translate(new Vector2(-3.5f * Time.deltaTime, 0f));
+
+        }
+        else
+        {
+            anim.SetBool("Running", false);
         }
     }
 

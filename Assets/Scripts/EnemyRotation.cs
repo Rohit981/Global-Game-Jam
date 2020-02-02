@@ -6,9 +6,8 @@ public class EnemyRotation : MonoBehaviour
 {
     [SerializeField] private Transform target;
     Rigidbody2D rb;
-    [SerializeField] private GameObject combatState;
-    [SerializeField] private float speed;
-    [SerializeField] private float ChangeState;
+    [SerializeField] private GameObject combatState;  
+    [SerializeField] private GameObject explosion;
     public Vector3 targetVector;
     public float mag;
     bool closeEnough = false;
@@ -21,9 +20,7 @@ public class EnemyRotation : MonoBehaviour
     void Start()
     {
         target = GameObject.FindGameObjectWithTag("Player").transform;
-        rb = GetComponent<Rigidbody2D>();
-        speed = 0.01f;
-        ChangeState = 0f;
+        rb = GetComponent<Rigidbody2D>();       
         combatState = GameObject.FindGameObjectWithTag("Combat");
         combatState.GetComponent<Combat>().enemies++;
         shieldRef = FindObjectOfType<Shield>();
@@ -75,7 +72,7 @@ public class EnemyRotation : MonoBehaviour
                 gunRef.health -= 2f;
             }
             Destroy(this.gameObject);
-            
+            Instantiate(explosion, transform.position, transform.rotation);
         }
     }
 
