@@ -360,8 +360,8 @@ TextureImporter:
         y: 3567
         width: 580
         height: 1005
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -377,12 +377,12 @@ TextureImporter:
       name: Repairman SpriteSheet_16
       rect:
         serializedVersion: 2
-        x: 1914
-        y: 3567
+        x: 1906
+        y: 3575
         width: 620
         height: 1005
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -402,8 +402,8 @@ TextureImporter:
         y: 3567
         width: 721
         height: 1005
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
