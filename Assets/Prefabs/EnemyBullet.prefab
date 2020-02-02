@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 592090817852071330}
   - component: {fileID: 380756189347261495}
   - component: {fileID: -1003172253017595893}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: EnemyBullet
   m_TagString: EnemyBullet
   m_Icon: {fileID: 0}
@@ -116,7 +116,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80d922d880837c943913caeb9086fc51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 20
+  speed: 30
 --- !u!58 &-1003172253017595893
 CircleCollider2D:
   m_ObjectHideFlags: 0

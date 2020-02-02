@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8624118995942125552}
   - component: {fileID: 8624118995942125553}
   - component: {fileID: 8624118995942125565}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: RocketSpriteDown
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -118,7 +118,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   forceValue: -500
   RoatateValue: -1500
-  TimeOfDetonation: 10
+  TimeOfDetonation: 5
 --- !u!61 &8624118995942125565
 BoxCollider2D:
   m_ObjectHideFlags: 0

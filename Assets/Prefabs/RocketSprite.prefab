@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6534345065306730088}
   - component: {fileID: 6534345065306730089}
   - component: {fileID: 6534345065306730085}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: RocketSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -118,7 +118,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   forceValue: 500
   RoatateValue: 1500
-  TimeOfDetonation: 10
+  TimeOfDetonation: 5
 --- !u!61 &6534345065306730085
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -20,9 +20,9 @@ TagManager:
   - 
   - Player
   - MovingPlayer
-  - 
-  - 
-  - 
+  - PlayerBullets
+  - EnemyBullets
+  - GroundLayer
   - 
   - 
   - 

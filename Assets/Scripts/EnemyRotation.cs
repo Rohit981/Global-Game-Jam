@@ -32,13 +32,13 @@ public class EnemyRotation : MonoBehaviour
         if (targetVector.magnitude >= 12 && !closeEnough)
         {
 
-            transform.position = Vector3.MoveTowards(transform.position, target.position, 20 * Time.deltaTime);
+            transform.position = Vector3.MoveTowards(transform.position, target.position, 5 * Time.deltaTime);
         }
         
         else
         {
             closeEnough = true;
-            transform.RotateAround(target.position, -Vector3.forward, 30 * Time.deltaTime);
+            transform.RotateAround(target.position, Vector3.forward, 40 * Time.deltaTime);
         }
 
        
