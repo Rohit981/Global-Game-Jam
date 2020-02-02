@@ -16,6 +16,7 @@ public class EnemyRotation : MonoBehaviour
     private Engine engineRef;
     private Gun gunRef;
     private ShipController ship;
+  
     // Start is called before the first frame update
     void Start()
     {
@@ -73,6 +74,7 @@ public class EnemyRotation : MonoBehaviour
             }
             Destroy(this.gameObject);
             Instantiate(explosion, transform.position, transform.rotation);
+            
         }
     }
 

@@ -38,7 +38,7 @@ public class AsteroidMovement : MonoBehaviour
     {
         targetVector = target.position - transform.position;
 
-            transform.position = Vector3.MoveTowards(transform.position, target.position, 5 * Time.deltaTime);
+            transform.position = Vector3.MoveTowards(transform.position, target.position, Random.Range(20f,35f) * Time.deltaTime);
 
         DieTime += Time.deltaTime;
 
@@ -63,7 +63,7 @@ public class AsteroidMovement : MonoBehaviour
             }
             else if (shieldRef.health > 0)
             {
-                shieldRef.health -= 5;
+                shieldRef.health -= 50;
                 engineRef.health -= 2f;
                 gunRef.health -= 2f;
             }

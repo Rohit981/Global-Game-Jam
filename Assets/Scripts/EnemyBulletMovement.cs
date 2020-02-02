@@ -22,6 +22,7 @@ public class EnemyBulletMovement : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
 
         targetVector = target.position - transform.position;
+
         shieldRef = FindObjectOfType<Shield>();
         ship = FindObjectOfType<ShipController>();
         engineRef = FindObjectOfType<Engine>();
@@ -34,7 +35,6 @@ public class EnemyBulletMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
         rb.velocity = targetVector * speed * Time.deltaTime;
     }
 
