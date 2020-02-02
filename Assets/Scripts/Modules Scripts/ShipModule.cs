@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ShipModule : MonoBehaviour
 {
@@ -12,9 +13,10 @@ public class ShipModule : MonoBehaviour
     [Range(0.0001f, 2f)] public float secondsTillRepairStop = 0.0001f;
     public float neglect = 0.0001f;
     public float amountToRepair = 0f;
+    public Image helpGui;
     void Start()
     {
-
+        helpGui.enabled = false;
     }
     protected void UpdateRepairBonus()
     {
@@ -41,7 +43,7 @@ public class ShipModule : MonoBehaviour
 
     protected void Repairing()
     {
-        if (isRepairing)
+        if (isRepairing && health < 99)
         {
 
             health += Time.deltaTime * (amountToRepair - ((neglect / secondsTillRepairStop) * amountToRepair));

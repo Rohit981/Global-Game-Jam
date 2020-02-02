@@ -28,9 +28,9 @@ public class Shield : ShipModule
         UpdateRepairBonus();
         if (isRepairing)
             Repairing();
-        //if (!isRepairing)
+        if(health > 0)
         {
-            health -= Time.deltaTime * (damageMagnifier);
+            //health -= Time.deltaTime * (damageMagnifier);
         }
         progressBar.setFillAmount(health);
     }

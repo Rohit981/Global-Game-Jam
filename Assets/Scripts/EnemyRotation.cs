@@ -6,11 +6,17 @@ public class EnemyRotation : MonoBehaviour
 {
     [SerializeField] private Transform target;
     Rigidbody2D rb;
+    [SerializeField] private GameObject combatState;
     [SerializeField] private float speed;
     [SerializeField] private float ChangeState;
     public Vector3 targetVector;
     public float mag;
     bool closeEnough = false;
+    internal float MaxEnemies = 10;
+    private Shield shieldRef;
+    private Engine engineRef;
+    private Gun gunRef;
+    private ShipController ship;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,7 +24,12 @@ public class EnemyRotation : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         speed = 0.01f;
         ChangeState = 0f;
-
+        combatState = GameObject.FindGameObjectWithTag("Combat");
+        combatState.GetComponent<Combat>().enemies++;
+        shieldRef = FindObjectOfType<Shield>();
+        ship = FindObjectOfType<ShipController>();
+        engineRef = FindObjectOfType<Engine>();
+        gunRef = FindObjectOfType<Gun>();
     }
 
     // Update is called once per frame
@@ -50,7 +61,30 @@ public class EnemyRotation : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             print("Collided with player");
+
+            if(shieldRef.health <= 0)
+            {
+                ship.hullIntegrity -= 5;
+                engineRef.health -= 5f;
+                gunRef.health -= 5f;
+            }
+            else if(shieldRef.health > 0)
+            {
+                shieldRef.health -= 5;
+                engineRef.health -= 2f;
+                gunRef.health -= 2f;
+            }
             Destroy(this.gameObject);
+            
         }
     }
+
+    private void OnDestroy()
+    {
+        //MaxEnemies -= 1f;
+        combatState.GetComponent<Combat>().enemies--;
+
+    }
+
+
 }
