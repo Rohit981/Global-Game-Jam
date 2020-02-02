@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Repair : MonoBehaviour
 {
-    private GameObject collidedObj;
+    private GameObject collidedObj;  
     private void OnCollisionStay2D(Collision2D collision)
     {
         if (collision.gameObject.tag != "Player") return;
@@ -24,6 +24,7 @@ public class Repair : MonoBehaviour
 
         if (Input.GetButtonDown(collidedObj.GetComponent<PlayerMovement>().playerInteract))
         {
+            collidedObj.GetComponent<PlayerMovement>().anim.SetBool("Fixing", true);        
             GetComponent<ShipModule>().helpGui.enabled = false;
             GetComponent<ShipModule>().neglect = 0.0001f;
             if (GetComponent<ShipModule>().amountToRepair < 50 )
@@ -39,6 +40,7 @@ public class Repair : MonoBehaviour
     private void OnCollisionExit2D(Collision2D collision)
     {
         if (collision.gameObject != collidedObj) return;
+        collidedObj.GetComponent<PlayerMovement>().anim.SetBool("Fixing", false);
         GetComponent<ShipModule>().isRepairing = false;
         GetComponent<ShipModule>().helpGui.enabled = false;
     }

@@ -17,6 +17,8 @@ public class RocketForce : MonoBehaviour
 
     [SerializeField] private float TimeOfDetonation = 6f;
 
+    [SerializeField] public GameObject Explosions;
+
 
     
     // Start is called before the first frame update
@@ -106,6 +108,11 @@ public class RocketForce : MonoBehaviour
         {
             Destroy(gameObject);
         }
+    }
+
+    private void OnDestroy()
+    {
+        Instantiate(Explosions, transform.position, transform.rotation);
     }
 
 }
