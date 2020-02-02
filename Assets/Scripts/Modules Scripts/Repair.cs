@@ -26,7 +26,7 @@ public class Repair : MonoBehaviour
         {
             GetComponent<ShipModule>().helpGui.enabled = false;
             GetComponent<ShipModule>().neglect = 0.0001f;
-            if (GetComponent<ShipModule>().amountToRepair < 10 )
+            if (GetComponent<ShipModule>().amountToRepair < 50 )
             {
                 GetComponent<ShipModule>().amountToRepair += GetComponent<ShipModule>().repairSpeed;
             }

@@ -13,6 +13,10 @@ public class EnemyRotation : MonoBehaviour
     public float mag;
     bool closeEnough = false;
     internal float MaxEnemies = 10;
+    private Shield shieldRef;
+    private Engine engineRef;
+    private Gun gunRef;
+    private ShipController ship;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,7 +24,12 @@ public class EnemyRotation : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         speed = 0.01f;
         ChangeState = 0f;
-
+        combatState = GameObject.FindGameObjectWithTag("Combat");
+        combatState.GetComponent<Combat>().enemies++;
+        shieldRef = FindObjectOfType<Shield>();
+        ship = FindObjectOfType<ShipController>();
+        engineRef = FindObjectOfType<Engine>();
+        gunRef = FindObjectOfType<Gun>();
     }
 
     // Update is called once per frame
@@ -53,6 +62,18 @@ public class EnemyRotation : MonoBehaviour
         {
             print("Collided with player");
 
+            if(shieldRef.health <= 0)
+            {
+                ship.hullIntegrity -= 5;
+                engineRef.health -= 5f;
+                gunRef.health -= 5f;
+            }
+            else if(shieldRef.health > 0)
+            {
+                shieldRef.health -= 5;
+                engineRef.health -= 2f;
+                gunRef.health -= 2f;
+            }
             Destroy(this.gameObject);
             
         }
@@ -60,7 +81,8 @@ public class EnemyRotation : MonoBehaviour
 
     private void OnDestroy()
     {
-        MaxEnemies -= 1f;
+        //MaxEnemies -= 1f;
+        combatState.GetComponent<Combat>().enemies--;
 
     }
 

@@ -30,7 +30,7 @@ public class Shield : ShipModule
             Repairing();
         if(health > 0)
         {
-            health -= Time.deltaTime * (damageMagnifier);
+            //health -= Time.deltaTime * (damageMagnifier);
         }
         progressBar.setFillAmount(health);
     }
